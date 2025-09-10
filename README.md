@@ -34,10 +34,12 @@ fetch("https://cv-backend-ttra.onrender.com/api/experiences/")
 ```
 cv-backend/
 ├── portfolio/
+|   ├── admin.py
 │   ├── models.py
 │   ├── serializers.py
 │   ├── views.py
 │   └── urls.py
+│   
 ├── cvapi/
 │   ├── settings.py
 │   ├── urls.py
