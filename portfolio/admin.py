@@ -5,7 +5,7 @@ from .models import Project, Skill, Experience, Education
 
 @admin.register(Experience)
 class ExperienceAdmin(admin.ModelAdmin):
-    list_display = ('company', 'position', 'start_date', 'end_date','key_words','description')
+    list_display = ('company', 'position', 'start_date', 'end_date','key_words','short_description','description')
     list_filter = ('company', 'start_date','end_date')
     search_fields = ('company', 'position','key_words')
 
@@ -16,9 +16,9 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(Skill)
 class SkillAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'proficiency')
-    list_filter = ('category', 'proficiency')
-    search_fields = ('name',)
+    list_display = ('category', 'description')
+    list_filter = ('category',)
+    search_fields = ('category',)
 
 @admin.register(Education)
 class EducationAdmin(admin.ModelAdmin):
