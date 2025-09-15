@@ -15,7 +15,9 @@ class Experience(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=100)
     technologies = models.CharField(max_length=200)
-    url = models.URLField(blank=True, null=True)
+    url_live = models.URLField(blank=True, null=True)
+    url_git = models.URLField(blank=True, null=True)
+    url_git_backend = models.URLField(blank=True, null=True)
     description = models.TextField()
 
     def __str__(self):

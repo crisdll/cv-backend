@@ -11,7 +11,7 @@ class ExperienceAdmin(admin.ModelAdmin):
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'technologies', 'url','description')
+    list_display = ('title', 'technologies', 'url_live', 'url_git', 'url_git_backend', 'description')
     search_fields = ('title', 'technologies')
 
 @admin.register(Skill)
