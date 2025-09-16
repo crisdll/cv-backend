@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'portfolio',
     'corsheaders',
+    'modeltranslation',
 ]
 
 
@@ -118,6 +119,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+LANGUAGES = (
+    ('en', 'English'),
+    ('es', 'Spanish'),
+    ('ca', 'Catalan'),
+)
 
 TIME_ZONE = 'UTC'
 
