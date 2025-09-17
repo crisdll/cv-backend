@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Experience, Education, Project, Skill
+from .models import Experience, Education, Project, Skill, Article
 
 class ExperienceSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,4 +19,9 @@ class ProjectSerializer(serializers.ModelSerializer):
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
+        fields = '__all__'
+
+class ArticleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Article
         fields = '__all__'

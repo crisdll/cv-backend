@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Experience, Project, Skill, Education
+from .models import Experience, Project, Skill, Education, Article
 
 @register(Experience)
 class ExperienceTranslationOptions(TranslationOptions):
@@ -16,3 +16,7 @@ class SkillTranslationOptions(TranslationOptions):
 @register(Education)
 class EducationTranslationOptions(TranslationOptions):
     fields = ('institution', 'degree')
+
+@register(Article)
+class ArticleTranslationOptions(TranslationOptions):
+    fields = ('title',)
